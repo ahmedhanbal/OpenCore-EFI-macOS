@@ -15,12 +15,10 @@ Previous versions may also work (as low as Catalina).
 
 ### ✅ Supported
 - **CPU:** AMD Ryzen 5 5500U  
-- **GPU:** AMD Radeon Graphics (internal display works)  
-- **Audio:** Realtek(R) ALC236 (working with layout-id 3, speakers OK) 
-- **Audio:** AMD High Definition Audio Device (output works)  
-
+- **GPU:** AMD Radeon Graphics (works with accelerated encoding and decoding)  
+- **Audio:** Realtek(R) ALC236 (working with layout-id 3, speakers OK)  
+- **Internet:** USB Tethering from Android using [HORNDIS kext](.\EFI\OC\Drivers\HoRNDIS.kext)
 ### ❌ Unsupported / Not Working
-- **Audio (Microphone Array):** AMD Audio Device  
 - **Wi-Fi:** Realtek RTL8822CE 802.11ac PCIe Adapter  
 - **Storage Controller:** Gold P31/BC711/PC711 NVMe SSD  
 - **Bluetooth:** Realtek Bluetooth 5 Adapter  
