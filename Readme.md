@@ -1,6 +1,6 @@
 # Hackintosh EFI for HP 15s-EF2127WM laptop 
 
-This repository contains the EFI setup I used to successfully boot macOS on my AMD Ryzen 5 5500U laptop.
+This repository contains the EFI setup I used to successfully boot macOS on my HP laptop with AMD CPU.
 
 I have tested this configuration on:
 
@@ -11,7 +11,7 @@ Previous versions may also work (as low as Catalina).
 
 ---
 
-## Hardware Compatibility
+## Hardware Specs
 
 ### ✅ Supported
 - **CPU:** AMD Ryzen 5 5500U  
