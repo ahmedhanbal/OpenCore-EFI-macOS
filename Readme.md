@@ -29,7 +29,7 @@ Previous versions may also work (as low as Catalina).
 
 Since the onboard **NVMe SSD is unsupported**, I used my **rooted Android phone** as a storage device.  
 
-Instead of exposing the entire phone storage, I created a **raw `.img` file** on the Android device, which macOS treated as a native disk.  
+Instead of exposing the entire phone storage, I hosted a **raw `.img` file** on the Android device which was mounted as a mass storage usb gadget using [DriveDroid](http://softwarebakery.com/projects/drivedroid), which macOS treated as a native disk.  
 This allowed me to install and boot macOS directly, bypassing the unsupported NVMe controller.  
 
 ---
