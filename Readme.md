@@ -4,10 +4,12 @@ This repository contains the EFI setup I used to successfully boot macOS on my H
 
 I have tested this configuration on:
 
-- **macOS 15 (Sequoia)**
-- **macOS Tahoe Beta**
+- **macOS Tahoe 26**
 
 Previous versions may also work (as low as Catalina).
+
+![macOS Tahoe](Res/Screenshot.png)
+
 
 ---
 
@@ -15,25 +17,16 @@ Previous versions may also work (as low as Catalina).
 
 ### ✅ Supported
 - **CPU:** AMD Ryzen 5 5500U  
-- **GPU:** AMD Radeon Graphics (works with accelerated encoding and decoding)  
+- **GPU:** AMD Radeon Graphics  
 - **Audio:** Realtek(R) ALC236 (working with layout-id 3, speakers OK)  
-- **Internet:** USB Tethering from Android using [HORNDIS kext](./EFI/OC/Kexts/HoRNDIS.kext/)
-### ❌ Unsupported / Not Working
 - **Wi-Fi:** Realtek RTL8822CE 802.11ac PCIe Adapter  
 - **Storage Controller:** Gold P31/BC711/PC711 NVMe SSD  
 - **Bluetooth:** Realtek Bluetooth 5 Adapter  
+- **Camera:** Crashes on capture in some apps but can work in online meetings, facetime,etc. 
 
 ---
 
-## Storage Note
-
-Since the onboard **NVMe SSD is unsupported**, I used my **rooted Android phone** as a storage device.  
-
-Instead of exposing the entire phone storage, I hosted a **raw `.img` file** on the Android device which was mounted as a mass storage usb gadget using [DriveDroid](http://softwarebakery.com/projects/drivedroid), which macOS treated as a native disk.  
-This allowed me to install and boot macOS directly, bypassing the unsupported NVMe controller.  
-
----
 
 ## Installation Reference
 
-I followed [Dortania’s OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) to set up this Hackintosh.  
+I followed [Dortania OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) and [OpCore-Simplify](https://github.com/lzhoang2801/OpCore-Simplify) to set up this Hackintosh.  
